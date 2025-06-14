@@ -22,6 +22,19 @@ You can configure whether Kitty opens a **new tab** in an existing window or **l
 wget -qO- https://raw.githubusercontent.com/xinguohe/KittyNaut/refs/heads/main/install.sh | bash
 ```
 
+## 🧪 Usage (Enable Kitty Remote Control)
+
+To support opening new tabs in the same Kitty window, you must enable remote control in your Kitty configuration.
+
+Edit your `~/.config/kitty/kitty.conf` and add the following:
+
+```conf
+allow_remote_control yes
+listen_on unix:/tmp/kitty
+```
+
+Then restart Kitty to apply changes.
+
 ## 🔍 Configuration
 
 Edit the `open_in_kitty.py` file and set:
@@ -35,5 +48,4 @@ USE_TAB = True  # Set to False to always open a new Kitty window
 ```bash
 rm ~/.local/share/nautilus-python/extensions/open_in_kitty.py
 nautilus -q
-
 ```
