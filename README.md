@@ -19,7 +19,7 @@ You can configure whether Kitty opens a **new tab** in an existing window or **l
 ## 🛠️ Installation
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/ | bash
+wget -qO- https://raw.githubusercontent.com/xinguohe/KittyNaut/refs/heads/main/install.sh | bash
 ```
 
 ## 🔍 Configuration
@@ -37,4 +37,3 @@ rm ~/.local/share/nautilus-python/extensions/open_in_kitty.py
 nautilus -q
 
 ```
-

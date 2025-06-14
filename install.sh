@@ -70,7 +70,7 @@ echo "[INFO] Installing Kitty Nautilus extension..."
 
 EXT_DIR="$HOME/.local/share/nautilus-python/extensions"
 EXT_FILE="$EXT_DIR/open_in_kitty.py"
-REPO_URL=""
+REPO_URL="https://raw.githubusercontent.com/xinguohe/KittyNaut/refs/heads/main/open_in_kitty.py"
 
 mkdir -p "$EXT_DIR"
 rm -f "$EXT_FILE"
